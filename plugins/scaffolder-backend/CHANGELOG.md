@@ -1,5 +1,16 @@
 # @backstage/plugin-scaffolder-backend
 
+## 0.12.5
+
+### Patch Changes
+
+- c2db794f5: add defaultBranch property for publish GitHub action
+- Updated dependencies
+  - @backstage/integration@0.5.8
+  - @backstage/catalog-model@0.9.0
+  - @backstage/backend-common@0.8.5
+  - @backstage/catalog-client@0.3.16
+
 ## 0.12.4
 
 ### Patch Changes
