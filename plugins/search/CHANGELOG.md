@@ -1,5 +1,22 @@
 # @backstage/plugin-search
 
+## 0.4.3
+
+### Patch Changes
+
+- 078d4973e: Handle request errors properly and display them in the results list.
+- Updated dependencies
+  - @backstage/plugin-catalog-react@0.3.0
+
+## 0.4.2
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/core-components@0.1.5
+  - @backstage/catalog-model@0.9.0
+  - @backstage/plugin-catalog-react@0.2.6
+
 ## 0.4.1
 
 ### Patch Changes

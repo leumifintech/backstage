@@ -1,5 +1,22 @@
 # @backstage/plugin-kubernetes-backend
 
+## 0.3.10
+
+### Patch Changes
+
+- ae84b20cf: Revert the upgrade to `fs-extra@10.0.0` as that seemed to have broken all installs inexplicably.
+- Updated dependencies
+  - @backstage/backend-common@0.8.6
+
+## 0.3.9
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/catalog-model@0.9.0
+  - @backstage/backend-common@0.8.5
+  - @backstage/plugin-kubernetes-common@0.1.2
+
 ## 0.3.8
 
 ### Patch Changes

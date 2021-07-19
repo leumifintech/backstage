@@ -1,5 +1,41 @@
 # @backstage/techdocs-common
 
+## 0.6.8
+
+### Patch Changes
+
+- d5eaab91d: Adds custom docker image support to the techdocs generator. This change adds a new `techdocs.generator` configuration key and deprecates the existing `techdocs.generators.techdocs` key.
+
+  ```yaml
+  techdocs:
+    # recommended, going forward:
+    generator:
+      runIn: 'docker' # or 'local'
+      # New optional settings
+      dockerImage: my-org/techdocs # use a custom docker image
+      pullImage: false # disable automatic pulling of image (e.g. if custom docker login is required)
+    # legacy (deprecated):
+    generators:
+      techdocs: 'docker' # or 'local'
+  ```
+
+- c18e8eb91: Provide optional `logger: Logger` and `logStream: Writable` arguments to the `GeneratorBase#run(...)` command.
+  They receive all log messages that are emitted during the generator run.
+- ae84b20cf: Revert the upgrade to `fs-extra@10.0.0` as that seemed to have broken all installs inexplicably.
+- Updated dependencies
+  - @backstage/backend-common@0.8.6
+
+## 0.6.7
+
+### Patch Changes
+
+- 683308ecf: Fix openStack swift publisher encoding issue. Remove utf8 forced encoding on binary files
+- 6841e0113: fix minor version of git-url-parse as 11.5.x introduced a bug for Bitbucket Server
+- Updated dependencies
+  - @backstage/integration@0.5.8
+  - @backstage/catalog-model@0.9.0
+  - @backstage/backend-common@0.8.5
+
 ## 0.6.6
 
 ### Patch Changes
